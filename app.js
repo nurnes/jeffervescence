@@ -53,9 +53,9 @@ const app = {
         const down = document.createElement('button')
         down.setAttribute("class", "down")
         up.addEventListener("click", this.moveUp.bind(this));
-        up.textContent = "^"
+        up.textContent = "↑"
         down.addEventListener("click", this.moveDown.bind(this))
-        down.textContent = "v"
+        down.textContent = "↓"
 
         const li = this.buildLI(film)
         li.appendChild(fav)
@@ -125,4 +125,4 @@ const app = {
 
 app.init({formSelector: '#film-form', listSelector: '#film-list'})
 
-//localStorage.clear() NUKE IF NECESSARY
+//localStorage.clear() //NUKE IF NECESSARY
