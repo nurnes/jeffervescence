@@ -6,3 +6,11 @@ li.wow {
     text-transform: uppercase;
     text-shadow: 1px 1px #c9b373;
 }
+
+button {
+    padding: 5px;
+}
+
+span {
+    padding: 100px;
+}
