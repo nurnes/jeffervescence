@@ -1,11 +1,17 @@
 const app = {
     init(formSelector){
-        document.querySelector(formSelector).addEventListener('submit', this.addFilm)
+        this.max = 0
+        document.querySelector(formSelector).addEventListener('submit', this.addFilm.bind(this))
     },
     addFilm(ev){
         ev.preventDefault()
-        const name = ev.target.filmName.value
-        console.log(name)
+        const f = ev.target
+        const film = {
+            name: f.filmName.value,
+            id: this.max+1
+        }
+        this.max++
+        console.log(film.name, film.id)
     },
 }
 
