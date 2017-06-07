@@ -1,0 +1,8 @@
+li.wow {
+    border-style: dotted;
+    border-width: 3px;
+    background-color: #fffbd5;
+    border-color: #c9c173;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #c9b373;
+}
