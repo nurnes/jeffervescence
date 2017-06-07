@@ -5,7 +5,7 @@ const app = {
         this.list = document.querySelector(selectors.listSelector)
         document.querySelector(selectors.formSelector).addEventListener('submit', this.addFilm.bind(this))
 
-        /*if(localStorage.getItem("max")){
+        if(localStorage.getItem("max")){
             this.max = parseInt(localStorage.getItem("max"))
         }
         if(localStorage.getItem("films")){
@@ -29,7 +29,7 @@ const app = {
             downs.forEach(function(value){
                 value.addEventListener("click", this.moveDown.bind(this))
             }, this)
-        }*/
+        }
     },
     addFilm(ev){
         ev.preventDefault()
